@@ -10,13 +10,17 @@
     <header>
       <!-- Blog Title & Jargons -->
       <h1>Pixel Pulse</h1>
-      <p>Helps you keep up with your favorite game</p>
+      <p>Helps You Keep Up</p>
 
       <!-- Nav items, not sure if I have to wrapped it with <ul> as well -->
-      <nav><a href="">Home</a></nav>
-      <nav><a href="">Reviews</a></nav>
-      <nav><a href="">Devlogs</a></nav>
-      <nav><a href="">Submit Game</a></nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Devlogs</a></li>
+          <li><a href="#">Submit Game</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main Content -->
@@ -32,38 +36,45 @@
             width="100%"
           />
         </figure>
-        <h2>Schedule I</h2>
-        <p>a game where you build your drugs empire</p>
+        <article>
+          <h3>Schedule I</h3>
+          <p>a game where you build your drugs empire</p>
+        </article>
       </section>
 
       <!-- Article Section containing three latest post -->
       <section>
         <h2>Latest Post</h2>
         <p>Make sure not to missed it!</p>
-        <article>
-          <h3>R.E.P.O is currently hits 3 Million Players on Steam</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            similique dolor provident dolorem assumenda quibusdam?...
-          </p>
-          <a href="">Read More...</a>
-        </article>
-        <article>
-          <h3>HOgwarts Legacy 2 is under development said WB Games</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            similique dolor provident dolorem assumenda quibusdam?...
-          </p>
-          <a href="">Read More...</a>
-        </article>
-        <article>
-          <h3>Liar's bar added new game mode: Chaos Mode</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            similique dolor provident dolorem assumenda quibusdam?...
-          </p>
-          <a href="">Read More...</a>
-        </article>
+        <div class="articles-list">
+          <article>
+            <h3>R.E.P.O is currently hits 3 Million Players on Steam</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+          <article>
+            <h3>Hogwarts Legacy 2 is under development said WB Games</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+          <article>
+            <h3>Liar's bar added new game mode: Chaos Mode</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+        </div>
       </section>
 
       <!-- Game of the month section -->
@@ -71,37 +82,38 @@
         <h2>Game of the Month</h2>
         <p>Game loved by players across the world</p>
 
-        <div>
+        <article>
           <h3>Liar's Bar</h3>
           <small
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
             incidunt autem illum.</small
           >
-          <a href="">Download Game</a>
-          <a href="">Request Demo</a>
-        </div>
-        <div>
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
+        <article>
           <h3>Half Sword</h3>
           <small
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
             incidunt autem illum.</small
           >
-          <a href="">Download Game</a>
-          <a href="">Request Demo</a>
-        </div>
-        <div>
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
+        <article>
           <h3>Ghost of Yotei</h3>
           <small
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
             incidunt autem illum.</small
           >
-          <a href="">Download Game</a>
-          <a href="">Request Demo</a>
-        </div>
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
       </section>
 
       <!-- Categories or Tags -->
-      <aside>
+      <aside aria-label="Game Categories">
+        <h2>Categories</h2>
         <ul>
           <li>Puzzle</li>
           <li>RPG</li>
@@ -136,28 +148,35 @@
       </div>
 
       <!-- Newsletter Signup Form -->
-      <form>
-        <h3>Join our newsletter!</h3>
-        <p>Stay up to date with our latest news and info!</p>
+      <div>
+        <form>
+          <h3>Join our newsletter!</h3>
+          <p>Stay up to date with our latest news and info!</p>
 
-        <!-- The email input field -->
-        <label>Email <span>(required)</span></label>
-        <input type="email" placeholder="Enter your email address" />
+          <!-- The email input field -->
+          <label for="email">Email <span>(required)</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
 
-        <br />
+          <br />
 
-        <!-- Terms and Agreements checkbox -->
-        <input type="checkbox" />
-        <label
-          >I've read and agree with
-          <span><a href="">Terms of Service</a></span> and
-          <span><a href="">Privacy Policy</a></span></label
-        >
+          <!-- Terms and Agreements checkbox -->
+          <input type="checkbox" id="terms" name="terms" />
+          <label for="terms"
+            >I've read and agree with
+            <span><a href="#">Terms of Service</a></span> and
+            <span><a href="#">Privacy Policy</a></span></label
+          >
 
-        <br />
+          <br />
 
-        <button>Join Newsletter</button>
-      </form>
+          <button>Join Newsletter</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
