@@ -26,12 +26,16 @@ header {
 
 main {
   padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 h1,
 h2,
 h3,
-p {
+p,
+figure {
   margin: 0;
 }
 
@@ -72,4 +76,31 @@ nav ul {
 .button:hover {
   text-decoration: none;
   box-shadow: 0 5px 5px var(--primary-transparent);
+}
+
+.hero-figure {
+  position: relative;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.hero-figure img {
+  width: 100%;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary-transparent);
+  color: var(--bg);
+}
+
+.hero-content h3 {
+  font-size: 20pt;
+  font-weight: bold;
+  margin: 0;
 }
