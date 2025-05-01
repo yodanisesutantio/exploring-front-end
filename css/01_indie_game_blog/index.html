@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Pulse</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Blog Header -->
+    <header>
+      <!-- Blog Title & Jargons -->
+      <h1 class="blog-title">Pixel Pulse</h1>
+
+      <!-- Nav items, not sure if I have to wrapped it with <ul> as well -->
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Reviews</a></li>
+          <li><a href="#" class="nav-item">Devlogs</a></li>
+          <li><a href="#" class="nav-item submit">Submit Game</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section containing featured post -->
+      <section>
+        <h2>Featured Post:</h2>
+        <p>Trending post across the week</p>
+        <figure>
+          <img
+            src="https://picsum.photos/800/600"
+            alt="featured post image"
+            width="100%"
+          />
+        </figure>
+        <article>
+          <h3>Schedule I</h3>
+          <p>a game where you build your drugs empire</p>
+        </article>
+      </section>
+
+      <!-- Article Section containing three latest post -->
+      <section>
+        <h2>Latest Post</h2>
+        <p>Make sure not to missed it!</p>
+        <div class="articles-list">
+          <article>
+            <h3>R.E.P.O is currently hits 3 Million Players on Steam</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+          <article>
+            <h3>Hogwarts Legacy 2 is under development said WB Games</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+          <article>
+            <h3>Liar's bar added new game mode: Chaos Mode</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio similique dolor provident dolorem assumenda
+              quibusdam?...
+            </p>
+            <a href="#">Read More...</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Game of the month section -->
+      <section>
+        <h2>Game of the Month</h2>
+        <p>Game loved by players across the world</p>
+
+        <article>
+          <h3>Liar's Bar</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            incidunt autem illum.</small
+          >
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
+        <article>
+          <h3>Half Sword</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            incidunt autem illum.</small
+          >
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
+        <article>
+          <h3>Ghost of Yotei</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            incidunt autem illum.</small
+          >
+          <a href="#">Download Game</a>
+          <a href="#">Request Demo</a>
+        </article>
+      </section>
+
+      <!-- Categories or Tags -->
+      <aside aria-label="Game Categories">
+        <h2>Categories</h2>
+        <ul>
+          <li>Puzzle</li>
+          <li>RPG</li>
+          <li>Platformer</li>
+          <li>Horror</li>
+          <li>Casual</li>
+          <li>Competitive Multiplayer</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- The About Us Divs -->
+      <div>
+        <h4>About Pixel Pulse</h4>
+        <small
+          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          mollitia praesentium eaque culpa nostrum aliquam unde, excepturi quos
+          sint numquam sed reprehenderit!</small
+        >
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>Email : email@email.com</li>
+          <li>Twitter : @pixel.pulse.uk</li>
+          <li>Instagram : @pixel.pulse.uk</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup Form -->
+      <div>
+        <form>
+          <h3>Join our newsletter!</h3>
+          <p>Stay up to date with our latest news and info!</p>
+
+          <!-- The email input field -->
+          <label for="email">Email <span>(required)</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+
+          <br />
+
+          <!-- Terms and Agreements checkbox -->
+          <input type="checkbox" id="terms" name="terms" />
+          <label for="terms"
+            >I've read and agree with
+            <span><a href="#">Terms of Service</a></span> and
+            <span><a href="#">Privacy Policy</a></span></label
+          >
+
+          <br />
+
+          <button>Join Newsletter</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
