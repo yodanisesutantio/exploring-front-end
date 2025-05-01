@@ -1,5 +1,6 @@
 :root {
   --primary: #1e1f26;
+  --primary-transparent: rgba(30, 31, 38, 0.3);
   --accent: #e63946;
   --bg: #f8f9fa;
   --text: #2c2c2c;
@@ -16,14 +17,25 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
-  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
   background-color: var(--accent);
   color: var(--bg);
 }
 
+main {
+  padding: 1.5rem 2rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 nav {
-  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,10 +52,24 @@ nav ul {
   text-decoration: none;
 }
 
-.nav-item.submit {
+.nav-item.button {
   padding: 0.75rem 1rem;
   background-color: var(--bg);
   color: var(--accent);
   font-weight: bold;
   border-radius: 0.5rem;
+  transition: all 300ms ease;
+}
+
+.nav-item:focus-visible,
+.button:focus-visible {
+  text-decoration: underline;
+  outline: 2px solid var(--bg);
+  outline-offset: 4px;
+}
+
+.nav-item:hover,
+.button:hover {
+  text-decoration: none;
+  box-shadow: 0 5px 5px var(--primary-transparent);
 }
