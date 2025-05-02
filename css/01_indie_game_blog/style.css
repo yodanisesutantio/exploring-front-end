@@ -280,6 +280,52 @@ nav ul {
   line-height: 1;
 }
 
+.categories-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.categories-list {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem 1rem 0.5rem 4.5rem;
+  box-sizing: border-box;
+  border: 3px solid var(--primary);
+  list-style: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 300ms ease;
+  display: flex;
+  align-items: center;
+}
+
+.categories-list:hover {
+  box-shadow: 5px 5px var(--primary);
+}
+
+.categories-tags {
+  font-size: 16pt;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.categories-icon {
+  position: absolute;
+  left: 0.5rem;
+  opacity: 0.15;
+  width: 60px;
+}
+
+.view-more-categories-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+  box-sizing: border-box;
+}
+
 footer {
   padding: 1rem 10rem;
 }
