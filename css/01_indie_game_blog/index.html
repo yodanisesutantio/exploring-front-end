@@ -312,54 +312,81 @@
 
     <!-- Footer Section -->
     <footer>
-      <!-- The About Us Divs -->
-      <div>
-        <h4>About Pixel Pulse</h4>
-        <small
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-          mollitia praesentium eaque culpa nostrum aliquam unde, excepturi quos
-          sint numquam sed reprehenderit!</small
-        >
-      </div>
+      <div class="blog-info">
+        <!-- The About Us Divs -->
+        <div class="blog-info-wrapper">
+          <h2>About Pixel Pulse</h2>
+          <small
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            mollitia praesentium eaque culpa nostrum aliquam unde, excepturi
+            quos sint numquam sed reprehenderit!</small
+          >
+        </div>
 
-      <!-- Contact Info -->
-      <div>
-        <h4>Contact Info</h4>
-        <ul>
-          <li>Email : email@email.com</li>
-          <li>Twitter : @pixel.pulse.uk</li>
-          <li>Instagram : @pixel.pulse.uk</li>
-        </ul>
+        <!-- Contact Info -->
+        <div class="blog-info-wrapper">
+          <h2>Contact Info</h2>
+          <ul>
+            <small><li>Email : email@email.com</li></small>
+            <small><li>Twitter : @pixel.pulse.uk</li></small>
+            <small><li>Instagram : @pixel.pulse.uk</li></small>
+          </ul>
+        </div>
       </div>
 
       <!-- Newsletter Signup Form -->
-      <div>
-        <form>
-          <h3>Join our newsletter!</h3>
-          <p>Stay up to date with our latest news and info!</p>
+      <div class="newsletter-wrapper">
+        <form class="form-wrapper">
+          <div>
+            <h2>Join our newsletter!</h2>
+            <small>Stay up to date with our latest news and info!</small>
 
-          <!-- The email input field -->
-          <label for="email">Email <span>(required)</span></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email address"
-          />
+            <div class="input-flex">
+              <div class="input-field-wrapper">
+                <!-- The email input field -->
+                <label for="name"
+                  >Name <span>(required)</span
+                  ><span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="input-field-wrapper">
+                <!-- The email input field -->
+                <label for="email"
+                  >Email <span>(required)</span
+                  ><span style="color: red">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+            </div>
 
-          <br />
+            <!-- Terms and Agreements checkbox -->
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms"
+              ><small
+                >I've read and agree with
+                <span><a href="#" class="tos-link">Terms of Service</a></span>
+                and
+                <span
+                  ><a href="#" class="tos-link">Privacy Policy</a></span
+                ></small
+              ></label
+            >
+          </div>
 
-          <!-- Terms and Agreements checkbox -->
-          <input type="checkbox" id="terms" name="terms" />
-          <label for="terms"
-            >I've read and agree with
-            <span><a href="#">Terms of Service</a></span> and
-            <span><a href="#">Privacy Policy</a></span></label
-          >
-
-          <br />
-
-          <button>Join Newsletter</button>
+          <div class="cta-newsletter-wrapper">
+            <a href="#" class="cta-button">Join Newsletter</a>
+          </div>
         </form>
       </div>
     </footer>
