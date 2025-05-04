@@ -73,14 +73,18 @@ const Home = () => {
     },
   ]);
 
+  const handleDelete = (no) => {
+    const newPokemons = pokemons.filter((pokemon) => pokemon.no !== no);
+    setPokemons(newPokemons);
+  };
+
   return (
     <>
       <div className="home">
-        <PokemonList pokemons={pokemons} title="Pokedex Lists" />
-
         <PokemonList
-          pokemons={pokemons.filter((pokemon) => pokemon.type.includes("Fire"))}
-          title="Fire Pokemon"
+          pokemons={pokemons}
+          title="Pokedex Lists"
+          handleDelete={handleDelete}
         />
       </div>
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PokemonList = ({ pokemons, title }) => {
+const PokemonList = ({ pokemons, title, handleDelete }) => {
   //   const pokemons = props.pokemons;
   //   const title = props.title;
 
@@ -14,6 +14,9 @@ const PokemonList = ({ pokemons, title }) => {
             <small>#{pokemon.no}</small>
             <h2>{pokemon.name}</h2>
             <p>{pokemon.type}</p>
+            <button onClick={() => handleDelete(pokemon.no)}>
+              Release Pokemon
+            </button>
           </div>
         ))}
       </div>
