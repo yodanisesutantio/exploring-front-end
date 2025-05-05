@@ -1,35 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import PokemonList from "../components/PokemonList";
+import useFetch from "../useFetch";
 
 const Home = () => {
-  const [pokemons, setPokemons] = useState(null);
-  // const [name, setName] = useState("Bianca");
-  const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-      fetch("http://localhost:8000/pokemons")
-        .then((res) => {
-          // console.log(res);
-          if (!res.ok) {
-            throw Error("Could not reach data source");
-          }
-          return res.json();
-        })
-        .then((data) => {
-          // console.log(data);
-          setPokemons(data);
-          setIsPending(false);
-          setError(null);
-        })
-        .catch((err) => {
-          // console.log(err.message);
-          setIsPending(false);
-          setError(err.message);
-        });
-    }, 1000);
-  }, []);
+  const {
+    data: pokemons,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/pokemons");
 
   return (
     <>
