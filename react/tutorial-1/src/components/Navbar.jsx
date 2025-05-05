@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,8 +8,8 @@ const Navbar = () => {
         <h1>Gen 5 Pokedex</h1>
 
         <div className="links">
-          <a href="/">Home</a>
-          <a href="/add">Add New Pokemon</a>
+          <Link to="/">Home</Link>
+          <Link to="/add">Add New Pokemon</Link>
         </div>
       </nav>
     </>
