@@ -76,8 +76,52 @@
   text-align: center;
   align-items: center;
 }
+.pokemon-details h2 {
+  font-size: 32px;
+  color: #f1356d;
+}
 .navigate {
   display: inline-flex;
   gap: 4rem;
   margin-bottom: 1rem;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 10pt;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 700;
+  border: 0;
+  margin-top: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
 }

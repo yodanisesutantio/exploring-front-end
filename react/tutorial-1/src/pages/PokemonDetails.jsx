@@ -9,6 +9,9 @@ const PokemonDetails = () => {
     error,
     isPending,
   } = useFetch("http://localhost:8000/pokemons/" + currentId);
+  const formattedType = pokemons?.sType
+    ? `${pokemons.pType} · ${pokemons.sType}`
+    : pokemons?.pType;
 
   const [prevPokemon, setPrevPokemon] = useState(null);
   const [nextPokemon, setNextPokemon] = useState(null);
@@ -50,7 +53,7 @@ const PokemonDetails = () => {
           <article>
             <small>Pokemon Entry #{pokemons.id}</small>
             <h2>{pokemons.name}</h2>
-            <p>{pokemons.type}</p>
+            <p>{formattedType}</p>
             <img src={pokemons.thumb} alt="Pokemon Sprite" />
           </article>
         </div>

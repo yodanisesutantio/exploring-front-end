@@ -3,62 +3,79 @@
     {
       "id": 494,
       "name": "Victini",
-      "type": "Psychic · Fire",
+      "pType": "Psychic",
+      "sType": "Fire",
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/victini.avif"
     },
     {
       "id": 495,
       "name": "Snivy",
-      "type": "Grass",
+      "pType": "Grass",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/snivy.avif"
     },
     {
       "id": 496,
       "name": "Servine",
-      "type": "Grass",
+      "pType": "Grass",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/servine.avif"
     },
     {
       "id": 497,
       "name": "Serperior",
-      "type": "Grass",
+      "pType": "Grass",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/serperior.avif"
     },
     {
       "id": 498,
       "name": "Tepig",
-      "type": "Fire",
+      "pType": "Fire",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/tepig.avif"
     },
     {
       "id": 499,
       "name": "Pignite",
-      "type": "Fire · Fighting",
+      "pType": "Fire",
+      "sType": "Fighting",
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/pignite.avif"
     },
     {
       "id": 500,
       "name": "Emboar",
-      "type": "Fire · Fighting",
+      "pType": "Fire",
+      "sType": "Fighting",
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/emboar.avif"
     },
     {
       "id": 501,
       "name": "Oshawott",
-      "type": "Water",
+      "pType": "Water",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/oshawott.avif"
     },
     {
       "id": 502,
       "name": "Dewott",
-      "type": "Water",
+      "pType": "Water",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/dewott.avif"
     },
     {
       "id": 503,
       "name": "Samurott",
-      "type": "Water",
+      "pType": "Water",
+      "sType": null,
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/samurott.avif"
+    },
+    {
+      "id": 504,
+      "name": "Patrat",
+      "pType": "Normal",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/patrat.avif"
     }
   ]
 }
