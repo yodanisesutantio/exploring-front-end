@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   // const [entry, setEntry] = useState("");
@@ -7,6 +8,7 @@ const Create = () => {
   const [sType, setSType] = useState("");
   const [thumb, setThumb] = useState("");
   const [isPending, setIsPending] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,6 +40,8 @@ const Create = () => {
       .catch((err) => {
         console.error("❌ Failed to add Pokémon:", err);
       });
+
+    navigate("/");
   };
 
   return (

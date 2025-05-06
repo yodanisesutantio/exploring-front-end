@@ -80,6 +80,15 @@
   font-size: 32px;
   color: #f1356d;
 }
+.pokemon-details button {
+  background: #ff0000;
+  color: #fff;
+  font-weight: 600;
+  border: 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 .navigate {
   display: inline-flex;
   gap: 4rem;

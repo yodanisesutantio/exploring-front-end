@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 
 const PokemonDetails = () => {
@@ -17,6 +17,7 @@ const PokemonDetails = () => {
   const [nextPokemon, setNextPokemon] = useState(null);
 
   const id = Number(currentId);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch previous and next pokemon by ID
@@ -30,6 +31,14 @@ const PokemonDetails = () => {
       .then((data) => setNextPokemon(data))
       .catch(() => setNextPokemon(null));
   }, [id]);
+
+  const handleDelete = () => {
+    fetch("http://localhost:8000/pokemons/" + pokemons.id, {
+      method: "DELETE",
+    }).then(() => {
+      navigate("/");
+    });
+  };
 
   return (
     <div className="pokemon-details">
@@ -56,6 +65,7 @@ const PokemonDetails = () => {
             <p>{formattedType}</p>
             <img src={pokemons.thumb} alt="Pokemon Sprite" />
           </article>
+          <button onClick={handleDelete}>Release Pokemon</button>
         </div>
       )}
     </div>
