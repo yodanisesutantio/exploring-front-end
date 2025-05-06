@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Create from "./pages/Create";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PokemonDetails from "./pages/PokemonDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/add" element={<Create />} />
+            <Route path="/pokemon/:id" element={<PokemonDetails />} />
           </Routes>
         </div>
       </Router>

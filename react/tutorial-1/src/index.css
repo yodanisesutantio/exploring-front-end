@@ -54,6 +54,7 @@
   flex-direction: column;
   align-items: center;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 .pokemon-preview:hover {
   border: 2px solid #f1356d;
@@ -67,4 +68,16 @@
 .pokemon-preview h2 {
   font-size: 20px;
   color: #f1356d;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.navigate {
+  display: inline-flex;
+  gap: 4rem;
+  margin-bottom: 1rem;
 }

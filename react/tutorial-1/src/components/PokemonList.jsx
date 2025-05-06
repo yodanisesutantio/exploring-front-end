@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PokemonList = ({ pokemons, title }) => {
   //   const pokemons = props.pokemons;
@@ -9,12 +10,16 @@ const PokemonList = ({ pokemons, title }) => {
       <h1>{title}</h1>
       <div className="pokemon-preview-wrapper">
         {pokemons.map((pokemon) => (
-          <div className="pokemon-preview" key={pokemon.no}>
+          <Link
+            to={`/pokemon/${pokemon.id}`}
+            className="pokemon-preview"
+            key={pokemon.id}
+          >
             <img src={pokemon.thumb} alt="Pokemon Sprite" />
-            <small>#{pokemon.no}</small>
+            <small>#{pokemon.id}</small>
             <h2>{pokemon.name}</h2>
             <p>{pokemon.type}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </>
