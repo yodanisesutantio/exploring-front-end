@@ -1,0 +1,74 @@
+{
+  "pokemons": [
+    {
+      "id": "494",
+      "name": "Victini",
+      "pType": "Psychic",
+      "sType": "Fire",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/victini.avif"
+    },
+    {
+      "id": "495",
+      "name": "Snivy",
+      "pType": "Grass",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/snivy.avif"
+    },
+    {
+      "id": "496",
+      "name": "Servine",
+      "pType": "Grass",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/servine.avif"
+    },
+    {
+      "id": "497",
+      "name": "Serperior",
+      "pType": "Grass",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/serperior.avif"
+    },
+    {
+      "id": "498",
+      "name": "Tepig",
+      "pType": "Fire",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/tepig.avif"
+    },
+    {
+      "id": "499",
+      "name": "Pignite",
+      "pType": "Fire",
+      "sType": "Fighting",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/pignite.avif"
+    },
+    {
+      "id": "500",
+      "name": "Emboar",
+      "pType": "Fire",
+      "sType": "Fighting",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/emboar.avif"
+    },
+    {
+      "id": "501",
+      "name": "Oshawott",
+      "pType": "Water",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/oshawott.avif"
+    },
+    {
+      "id": "502",
+      "name": "Dewott",
+      "pType": "Water",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/dewott.avif"
+    },
+    {
+      "id": "503",
+      "name": "Samurott",
+      "pType": "Water",
+      "sType": null,
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/samurott.avif"
+    }
+  ]
+}
