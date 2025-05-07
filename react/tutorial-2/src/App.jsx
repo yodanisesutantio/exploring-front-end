@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Provider } from "@/components/ui/provider";
+import { Provider } from "./components/ui/provider";
 
 // layouts and pages
 import RootLayout from "./layouts/RootLayout";
@@ -23,7 +23,7 @@ const router = createBrowserRouter(
   )
 );
 
-function App({ Component, pageProps }) {
+function App() {
   return (
     <Provider>
       <RouterProvider router={router} />
