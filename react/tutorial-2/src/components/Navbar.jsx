@@ -38,7 +38,7 @@ const Navbar = () => {
           T
         </Box>
         <Text>trainer@pokemon.com</Text>
-        <Button colorPalette={"purple"}>Logout</Button>
+        <Button colorPalette={"red"}>Logout</Button>
       </HStack>
     </Flex>
   );

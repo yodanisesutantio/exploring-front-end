@@ -21,7 +21,7 @@ const Dashboard = () => {
     <SimpleGrid columns={4} gap={"4"} minChildWidth={"300px"}>
       {pokemons &&
         pokemons.map((pokemon) => (
-          <Card.Root key={pokemon.id} bg={"purple.400/5"}>
+          <Card.Root key={pokemon.id} bg={"red.500/5"}>
             <Card.Header>
               <HStack gap={"4"}>
                 <Image
@@ -32,7 +32,7 @@ const Dashboard = () => {
                   padding={"2"}
                   bg={"whiteAlpha.200"}
                   border={"1px solid"}
-                  borderColor={"purple.500"}
+                  borderColor={"red.500"}
                   borderRadius={"full"}
                 />
 
@@ -72,11 +72,7 @@ const Dashboard = () => {
             >
               <HStack width={"full"} justifyContent={"space-between"}>
                 <HStack>
-                  <Button
-                    variant={"outline"}
-                    paddingX={3}
-                    colorPalette={"purple"}
-                  >
+                  <Button variant={"outline"} paddingX={3} colorPalette={"red"}>
                     <LiaEye /> Watch
                   </Button>
                   <Button

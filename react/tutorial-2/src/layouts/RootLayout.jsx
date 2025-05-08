@@ -9,7 +9,7 @@ export default function RootLayout() {
       <GridItem
         as={"aside"}
         colSpan={{ base: 6, lg: 2, xl: 1 }}
-        backgroundColor={"purple.400"}
+        backgroundColor={"red.600"}
         minHeight={{ lg: "100vh" }}
         padding={{ base: 3, xl: 7 }}
       >
