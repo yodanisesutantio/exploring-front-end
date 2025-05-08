@@ -5,70 +5,80 @@
       "name": "Victini",
       "pType": "Psychic",
       "sType": "Fire",
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/victini.avif"
+      "description": "This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/victini.png"
     },
     {
       "id": "495",
       "name": "Snivy",
       "pType": "Grass",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/snivy.avif"
+      "description": "It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/snivy.png"
     },
     {
       "id": "496",
       "name": "Servine",
       "pType": "Grass",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/servine.avif"
+      "description": "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/servine.png"
     },
     {
       "id": "497",
       "name": "Serperior",
       "pType": "Grass",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/serperior.avif"
+      "description": "It can stop its opponents’ movements with just a glare. It takes in solar energy and boosts it internally.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/serperior.png"
     },
     {
       "id": "498",
       "name": "Tepig",
       "pType": "Fire",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/tepig.avif"
+      "description": "It can deftly dodge its foe’s attacks while shooting fireballs from its nose. It roasts berries before it eats them.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/tepig.png"
     },
     {
       "id": "499",
       "name": "Pignite",
       "pType": "Fire",
       "sType": "Fighting",
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/pignite.avif"
+      "description": "When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/pignite.png"
     },
     {
       "id": "500",
       "name": "Emboar",
       "pType": "Fire",
       "sType": "Fighting",
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/emboar.avif"
+      "description": "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/emboar.png"
     },
     {
       "id": "501",
       "name": "Oshawott",
       "pType": "Water",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/oshawott.avif"
+      "description": "It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/oshawott.png"
     },
     {
       "id": "502",
       "name": "Dewott",
       "pType": "Water",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/dewott.avif"
+      "description": "Strict training is how it learns its flowing double-scalchop technique.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/dewott.png"
     },
     {
       "id": "503",
       "name": "Samurott",
       "pType": "Water",
       "sType": null,
-      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/samurott.avif"
+      "description": "One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody.",
+      "thumb": "https://img.pokemondb.net/sprites/black-white/normal/samurott.png"
     }
   ]
 }

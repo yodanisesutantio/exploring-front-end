@@ -11,8 +11,16 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <Flex as={"nav"} padding={"2"} alignItems={"center"} gap={"2"}>
-      <Heading as={"h1"}>Gen 5 Pokedex</Heading>
+    <Flex
+      as={"nav"}
+      padding={"2"}
+      alignItems={"center"}
+      gap={"2"}
+      marginBottom={"6"}
+    >
+      <Heading as={"h1"} textStyle={"3xl"}>
+        Gen 5 Pokedex
+      </Heading>
       <Spacer />
 
       <HStack gap={"4"}>

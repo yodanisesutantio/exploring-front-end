@@ -8,7 +8,7 @@ import { Provider } from "./components/ui/provider";
 
 // layouts and pages
 import RootLayout from "./layouts/RootLayout";
-import Dashboard from "./pages/Dashboard";
+import Dashboard, { pokemonsLoader } from "./pages/Dashboard";
 import Create from "./pages/Create";
 import Profile from "./pages/Profile";
 
@@ -16,7 +16,7 @@ import Profile from "./pages/Profile";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Dashboard />} />
+      <Route index element={<Dashboard />} loader={pokemonsLoader} />
       <Route path="create" element={<Create />} />
       <Route path="profile" element={<Profile />} />
     </Route>
