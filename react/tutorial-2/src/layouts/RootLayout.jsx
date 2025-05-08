@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 
 export default function RootLayout() {
   return (
-    <Grid templateColumns={"repeat(6, 1fr)"} backgroundColor={"whiteAlpha.200"}>
+    <Grid templateColumns={"repeat(6, 1fr)"} backgroundColor={"gray.950"}>
       <GridItem
         as={"aside"}
         colSpan={{ base: 6, lg: 2, xl: 1 }}
