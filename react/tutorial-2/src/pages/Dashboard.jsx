@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -24,17 +25,14 @@ const Dashboard = () => {
           <Card.Root key={pokemon.id} bg={"red.500/5"}>
             <Card.Header>
               <HStack gap={"4"}>
-                <Image
-                  src={pokemon.thumb}
-                  width={"12"}
-                  height={"12"}
-                  fit={"cover"}
-                  padding={"2"}
-                  bg={"whiteAlpha.200"}
-                  border={"1px solid"}
-                  borderColor={"red.500"}
-                  borderRadius={"full"}
-                />
+                <Avatar.Root
+                  variant={"outline"}
+                  size={"xl"}
+                  colorPalette={"red"}
+                >
+                  <Avatar.Fallback name={pokemon.name} />
+                  <Avatar.Image src={pokemon.thumb} />
+                </Avatar.Root>
 
                 <Stack gap={"0"}>
                   <Text color={"whiteAlpha.600"} textStyle={"sm"}>

@@ -11,6 +11,7 @@ import RootLayout from "./layouts/RootLayout";
 import Dashboard, { pokemonsLoader } from "./pages/Dashboard";
 import Create, { createAction } from "./pages/Create";
 import Profile from "./pages/Profile";
+import { Toaster } from "./components/ui/toaster";
 
 // router and routes
 const router = createBrowserRouter(
@@ -27,6 +28,8 @@ function App() {
   return (
     <Provider>
       <RouterProvider router={router} />
+
+      <Toaster />
     </Provider>
   );
 }

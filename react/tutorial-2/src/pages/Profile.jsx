@@ -29,7 +29,7 @@ const Profile = () => {
             <List.Indicator asChild>
               <LiaEnvelope />
             </List.Indicator>
-            : trainer@pokemon.com
+            : ash.trainer@pokemon.com
           </List.Item>
         </List.Root>
       </Tabs.Content>
