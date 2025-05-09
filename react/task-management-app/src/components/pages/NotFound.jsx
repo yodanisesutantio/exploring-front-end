@@ -9,10 +9,11 @@ const NotFound = () => {
         width={"100vw"}
         height={"100vh"}
         alignItems={"center"}
+        marginTop={"-4"}
         justifyContent={"center"}
       >
         <VStack>
-          <Text paddingY={6} color={"gray.400"} letterSpacing={"0.3rem"}>
+          <Text color={"gray.400"} letterSpacing={"0.3rem"}>
             Oops! Page Not Found
           </Text>
 
@@ -20,14 +21,16 @@ const NotFound = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
+            marginTop={"-8"}
             fontFamily="'Cal Sans', sans-serif"
           >
             <Heading
               as="span"
               fontSize="160pt"
-              color="gray.200"
+              color="white"
+              lineHeight={1}
               css={{
-                WebkitTextStroke: "5px #09090B",
+                WebkitTextStroke: "4px #09090B",
               }}
             >
               4
@@ -35,10 +38,11 @@ const NotFound = () => {
             <Heading
               as="span"
               fontSize="160pt"
-              color="gray.400"
+              color="white"
+              lineHeight={1}
               mx={-8}
               css={{
-                WebkitTextStroke: "5px #09090B",
+                WebkitTextStroke: "4px #09090B",
               }}
             >
               0
@@ -46,16 +50,17 @@ const NotFound = () => {
             <Heading
               as="span"
               fontSize="160pt"
-              color="gray.400"
+              color="white"
+              lineHeight={1}
               css={{
-                WebkitTextStroke: "5px #09090B",
+                WebkitTextStroke: "4px #09090B",
               }}
             >
               4
             </Heading>
           </Box>
 
-          <Text paddingY={6} color={"gray.400"}>
+          <Text color={"gray.400"}>
             Don't worry! We can help you{" "}
             <Link
               href="/"
