@@ -3,12 +3,14 @@ import {
   Button,
   Field,
   Fieldset,
+  Card,
   Heading,
   Input,
   Stack,
   Text,
   VStack,
   Link,
+  Box,
 } from "@chakra-ui/react";
 import React from "react";
 import { Form } from "react-router-dom";
@@ -24,24 +26,23 @@ const Login = () => {
       height={"100vh"}
     >
       <Form>
-        <Fieldset.Root
+        <Card.Root
           width={"24rem"}
-          padding={6}
+          padding={2}
           border={"1px solid #ffffff22"}
           borderRadius={"md"}
+          variant={"elevated"}
         >
-          <Stack gap={0}>
-            <Fieldset.Legend>
-              <Heading as={"h1"} textStyle={"3xl"}>
-                Login to the App
-              </Heading>
-            </Fieldset.Legend>
-            <Fieldset.HelperText>
+          <Card.Header gap={0}>
+            <Card.Title as={"h1"} textStyle={"3xl"}>
+              Login to the App
+            </Card.Title>
+            <Card.Description>
               Please enter your account credentials
-            </Fieldset.HelperText>
-          </Stack>
+            </Card.Description>
+          </Card.Header>
 
-          <Fieldset.Content>
+          <Card.Body gap={6}>
             <Field.Root required>
               <Field.Label>
                 Username
@@ -55,23 +56,35 @@ const Login = () => {
                 <Field.RequiredIndicator />
               </Field.Label>
               <PasswordInput placeholder="Enter your Password" />
+              <Box display={"flex"} justifyContent={"end"} width={"full"}>
+                <Link
+                  href="/forgot"
+                  textDecoration={"underline"}
+                  fontWeight={"500"}
+                  _hover={{ textDecoration: "none" }}
+                >
+                  Forgot Password
+                </Link>
+              </Box>
             </Field.Root>
-            <Button fontWeight={"700"} colorPalette={"orange"}>
-              Login
-            </Button>
-            <Text>
-              Don't have an account?{" "}
-              <Link
-                href="/signup"
-                textDecoration={"underline"}
-                fontWeight={"500"}
-                _hover={{ textDecoration: "none" }}
-              >
-                Register Instead
-              </Link>
-            </Text>
-          </Fieldset.Content>
-        </Fieldset.Root>
+            <Field.Root>
+              <Button fontWeight={"700"} colorPalette={"cyan"} width={"full"}>
+                Login
+              </Button>
+              <Text textAlign={"center"} width={"full"}>
+                Don't have an account?{" "}
+                <Link
+                  href="/signup"
+                  textDecoration={"underline"}
+                  fontWeight={"500"}
+                  _hover={{ textDecoration: "none" }}
+                >
+                  Register Instead
+                </Link>
+              </Text>
+            </Field.Root>
+          </Card.Body>
+        </Card.Root>
       </Form>
     </VStack>
   );
