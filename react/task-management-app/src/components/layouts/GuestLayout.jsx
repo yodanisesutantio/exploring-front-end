@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
 import { useStateContext } from "@/components/context/ContextProvider";
+import { VStack } from "@chakra-ui/react";
 
 export default function GuestLayout() {
   const { token } = useStateContext();
@@ -11,9 +12,16 @@ export default function GuestLayout() {
   }
 
   return (
-    <div>
+    <VStack
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      width={"100vw"}
+      height={"100vh"}
+    >
       {/* To display children page components */}
       <Outlet />
-    </div>
+    </VStack>
   );
 }

@@ -13,7 +13,7 @@ const NotFound = () => {
         justifyContent={"center"}
       >
         <VStack>
-          <Text color={"gray.400"} letterSpacing={"0.3rem"}>
+          <Text color={"gray.400"} letterSpacing={"0.3rem"} marginBottom={6}>
             Oops! Page Not Found
           </Text>
 
@@ -22,40 +22,20 @@ const NotFound = () => {
             justifyContent="center"
             alignItems="center"
             marginTop={"-8"}
-            fontFamily="'Cal Sans', sans-serif"
           >
-            <Heading
-              as="span"
-              fontSize="160pt"
-              color="white"
-              lineHeight={1}
-              css={{
-                WebkitTextStroke: "4px #09090B",
-              }}
-            >
+            <Heading as="span" fontSize="160pt" color="white" lineHeight={0.8}>
               4
             </Heading>
             <Heading
               as="span"
               fontSize="160pt"
               color="white"
-              lineHeight={1}
+              lineHeight={0.8}
               mx={-8}
-              css={{
-                WebkitTextStroke: "4px #09090B",
-              }}
             >
               0
             </Heading>
-            <Heading
-              as="span"
-              fontSize="160pt"
-              color="white"
-              lineHeight={1}
-              css={{
-                WebkitTextStroke: "4px #09090B",
-              }}
-            >
+            <Heading as="span" fontSize="160pt" color="white" lineHeight={0.8}>
               4
             </Heading>
           </Box>
