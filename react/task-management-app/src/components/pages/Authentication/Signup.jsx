@@ -40,7 +40,7 @@ const Signup = () => {
           <Card.Root
             width={"26rem"}
             padding={2}
-            border={"1px solid #ffffff22"}
+            border={"1px solid #00000022"}
             borderRadius={"md"}
             variant={"elevated"}
           >
@@ -106,7 +106,7 @@ const Signup = () => {
           <Card.Root
             width={"26rem"}
             padding={2}
-            border={"1px solid #ffffff22"}
+            border={"1px solid #00000022"}
             borderRadius={"md"}
             variant={"elevated"}
           >

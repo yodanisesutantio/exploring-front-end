@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { useStateContext } from "@/components/context/ContextProvider";
+import { VStack } from "@chakra-ui/react";
 
 export default function MainLayout() {
   const { token } = useStateContext();
@@ -10,9 +11,17 @@ export default function MainLayout() {
     return <Navigate to="/login" />;
   }
   return (
-    <div>
+    <VStack
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      width={"100vw"}
+      height={"100vh"}
+      flexGrow={"grow"}
+    >
       {/* To display children page components */}
       <Outlet />
-    </div>
+    </VStack>
   );
 }

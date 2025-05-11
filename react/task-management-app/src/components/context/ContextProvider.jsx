@@ -3,8 +3,8 @@ import { createContext, useContext, useState } from "react";
 // Provisional Set Value for the User Authentication
 const StateContext = createContext({
   user: null,
-  token: null,
-  // token: "123", // To bypass the login phase
+  // token: null,
+  token: "123", // To bypass the login phase
   setUser: () => {},
   setToken: () => {},
 });

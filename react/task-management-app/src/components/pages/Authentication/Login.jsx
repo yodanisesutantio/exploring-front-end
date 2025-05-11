@@ -2,7 +2,6 @@ import { PasswordInput } from "@/components/ui/password-input";
 import {
   Button,
   Field,
-  Fieldset,
   Card,
   Heading,
   Input,
@@ -21,7 +20,7 @@ const Login = () => {
       <Card.Root
         width={"26rem"}
         padding={2}
-        border={"1px solid #ffffff22"}
+        border={"1px solid #00000022"}
         borderRadius={"md"}
         variant={"elevated"}
       >
