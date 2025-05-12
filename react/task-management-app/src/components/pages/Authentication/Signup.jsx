@@ -22,7 +22,15 @@ import { Form } from "react-router-dom";
 const Signup = () => {
   return (
     <Form>
-      <Steps.Root variant={"solid"} count={2}>
+      <Steps.Root
+        variant={"solid"}
+        count={2}
+        data-state="open"
+        opacity={0}
+        _open={{
+          animation: "fade-in 500ms ease 300ms forwards",
+        }}
+      >
         <Steps.List>
           <Steps.Item key={0} index={0} title={"User Information"}>
             <Steps.Indicator />

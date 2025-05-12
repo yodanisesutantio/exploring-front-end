@@ -23,6 +23,11 @@ const Login = () => {
         border={"1px solid #00000022"}
         borderRadius={"md"}
         variant={"elevated"}
+        data-state="open"
+        opacity={0}
+        _open={{
+          animation: "fade-in 500ms ease 300ms forwards",
+        }}
       >
         <Card.Header gap={0}>
           <Card.Title as={"h1"} textStyle={"3xl"}>

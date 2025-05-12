@@ -11,15 +11,7 @@ export default function MainLayout() {
     return <Navigate to="/login" />;
   }
   return (
-    <VStack
-      display={"flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      textAlign={"center"}
-      width={"100vw"}
-      height={"100vh"}
-      flexGrow={"grow"}
-    >
+    <VStack display={"flex"} textAlign={"center"} flexGrow={"grow"}>
       {/* To display children page components */}
       <Outlet />
     </VStack>
