@@ -12,8 +12,22 @@ import { Link } from "react-router-dom";
 
 const GetStarted = () => {
   return (
-    <>
-      <VStack marginBottom={8} width={"54rem"}>
+    <VStack
+      display={"flex"}
+      width={"100vw"}
+      height={"100vh"}
+      alignItems={"center"}
+      justifyContent={"center"}
+    >
+      <VStack
+        marginBottom={8}
+        width={"54rem"}
+        data-state="open"
+        opacity={0}
+        _open={{
+          animation: "fade-in 500ms ease 300ms forwards",
+        }}
+      >
         <Heading as={"h1"} textStyle={"4xl"}>
           Which Task do you want to manage?
         </Heading>
@@ -24,7 +38,14 @@ const GetStarted = () => {
         </Text>
       </VStack>
 
-      <HStack gap={12}>
+      <HStack
+        gap={12}
+        data-state="open"
+        opacity={0}
+        _open={{
+          animation: "fade-in 500ms ease 400ms forwards",
+        }}
+      >
         <Link to={"/task"}>
           <Box
             width={"26rem"}
@@ -83,7 +104,7 @@ const GetStarted = () => {
           </Box>
         </Link>
       </HStack>
-    </>
+    </VStack>
   );
 };
 

@@ -21,10 +21,13 @@ import { Form } from "react-router-dom";
 
 const Signup = () => {
   return (
+    // Form component is using react-router-dom instead of chakraUI component
     <Form>
+      {/* Since the form contains a lot of field, we have to break it down into 2 steps. With the help of ChakraUI Steps Component */}
       <Steps.Root
         variant={"solid"}
         count={2}
+        // Animation props
         data-state="open"
         opacity={0}
         _open={{
@@ -33,11 +36,13 @@ const Signup = () => {
       >
         <Steps.List>
           <Steps.Item key={0} index={0} title={"User Information"}>
+            {/* For Step 1: User Information such as Username, Password */}
             <Steps.Indicator />
             <Steps.Title>User Information</Steps.Title>
             <Steps.Separator />
           </Steps.Item>
           <Steps.Item key={1} index={1} title={"Security Question"}>
+            {/* For Step 2: Security Question means when user forgot their password they have to provide a personal question to enable them change their password */}
             <Steps.Indicator />
             <Steps.Title>Security Question</Steps.Title>
             <Steps.Separator />
@@ -62,6 +67,7 @@ const Signup = () => {
             </Card.Header>
 
             <Card.Body gap={6}>
+              {/* Username Entry Field */}
               <Field.Root required>
                 <Field.Label>
                   Username
@@ -69,6 +75,8 @@ const Signup = () => {
                 </Field.Label>
                 <Input name="username" placeholder="Enter your Username" />
               </Field.Root>
+
+              {/* Password Entry Field */}
               <Field.Root required>
                 <Field.Label>
                   Password
@@ -76,6 +84,8 @@ const Signup = () => {
                 </Field.Label>
                 <PasswordInput placeholder="Enter your Password" />
               </Field.Root>
+
+              {/* Confirm Password Entry Field */}
               <Field.Root required>
                 <Field.Label>
                   Confirm Password
@@ -84,6 +94,7 @@ const Signup = () => {
                 <PasswordInput placeholder="Confirm your Password" />
               </Field.Root>
 
+              {/* Next Steps Button */}
               <Field.Root>
                 <Steps.NextTrigger width={"full"} as={"div"}>
                   <Button
@@ -119,6 +130,7 @@ const Signup = () => {
             variant={"elevated"}
           >
             <Card.Header gap={0}>
+              {/* Previous Steps Button */}
               <Steps.PrevTrigger
                 display={"flex"}
                 justifyContent={"start"}
@@ -142,6 +154,7 @@ const Signup = () => {
             </Card.Header>
 
             <Card.Body gap={6}>
+              {/* Forgot Password Entry Field */}
               <Field.Root required>
                 <Field.Label>
                   Forgot Password Question Challenge
@@ -159,6 +172,8 @@ const Signup = () => {
                   placeholder="Enter your Answer from the question above"
                 />
               </Field.Root>
+
+              {/* Confirm Signup Button and Redirect to Login page link */}
               <Field.Root>
                 <Button fontWeight={"700"} colorPalette={"cyan"} width={"full"}>
                   Signup

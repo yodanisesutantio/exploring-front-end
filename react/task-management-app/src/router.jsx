@@ -6,6 +6,7 @@ import Signup from "@/components/pages/Authentication/Signup";
 import ForgotPassword from "@/components/pages/Authentication/ForgotPassword";
 import NotFound from "@/components/pages/NotFound";
 import GetStarted from "@/components/pages/GetStarted";
+import Task from "@/components/pages/Task/Task";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/get-started",
         element: <GetStarted />,
+      },
+      {
+        path: "/task",
+        element: <Task />,
+      },
+      {
+        path: "/recurring",
+        element: <Task />,
       },
     ],
   },

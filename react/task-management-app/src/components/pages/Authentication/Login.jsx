@@ -16,6 +16,7 @@ import { Form } from "react-router-dom";
 
 const Login = () => {
   return (
+    // Form component is using react-router-dom instead of chakraUI component
     <Form>
       <Card.Root
         width={"26rem"}
@@ -23,6 +24,7 @@ const Login = () => {
         border={"1px solid #00000022"}
         borderRadius={"md"}
         variant={"elevated"}
+        // Animation props
         data-state="open"
         opacity={0}
         _open={{
@@ -39,6 +41,7 @@ const Login = () => {
         </Card.Header>
 
         <Card.Body gap={6}>
+          {/* Username Entry Field */}
           <Field.Root required>
             <Field.Label>
               Username
@@ -46,12 +49,16 @@ const Login = () => {
             </Field.Label>
             <Input name="username" placeholder="Enter your Username" />
           </Field.Root>
+
+          {/* Password Entry Field */}
           <Field.Root required>
             <Field.Label>
               Password
               <Field.RequiredIndicator />
             </Field.Label>
             <PasswordInput placeholder="Enter your Password" />
+
+            {/* Forgot Password button */}
             <Box display={"flex"} justifyContent={"end"} width={"full"}>
               <Link
                 href="/forgot"
@@ -63,6 +70,8 @@ const Login = () => {
               </Link>
             </Box>
           </Field.Root>
+
+          {/* CTA Button and Redirect to Register Link */}
           <Field.Root>
             <Button fontWeight={"700"} colorPalette={"cyan"} width={"full"}>
               Login

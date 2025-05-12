@@ -16,7 +16,7 @@ export default function GuestLayout() {
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      backgroundColor={"gray.100"}
+      backgroundColor={"gray.50"}
       textAlign={"center"}
       width={"100vw"}
       height={"100vh"}

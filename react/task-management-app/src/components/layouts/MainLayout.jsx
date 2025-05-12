@@ -11,7 +11,12 @@ export default function MainLayout() {
     return <Navigate to="/login" />;
   }
   return (
-    <VStack display={"flex"} textAlign={"center"} flexGrow={"grow"}>
+    <VStack
+      display={"flex"}
+      textAlign={"center"}
+      flexGrow={"grow"}
+      backgroundColor={"gray.50"}
+    >
       {/* To display children page components */}
       <Outlet />
     </VStack>
