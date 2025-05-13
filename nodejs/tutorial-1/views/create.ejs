@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="create-pokemon content">
+      <form>
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="description">description</label>
+        <textarea name="description" id="description" required></textarea>
+        <button>Add Pokemon</button>
+      </form>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

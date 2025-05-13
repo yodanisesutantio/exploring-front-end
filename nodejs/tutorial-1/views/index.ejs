@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="pokemons content">
+      <h2>All Pokemons</h2>
+
+      <% if(pokemons.length > 0) { %> <% pokemons.forEach(pokemon => { %>
+      <h3 class="title"><%= pokemon.name %></h3>
+      <p class="description"><%= pokemon.description %></p>
+      <% }) %> <% } else { %>
+      <p>There are no pokemons to show</p>
+      <% } %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
