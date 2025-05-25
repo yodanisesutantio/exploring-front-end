@@ -1,6 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import React from "react";
+
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const res = await fetch("http://localhost:4000/pokemons");
+  const pokemons = await res.json();
+
+  return pokemons.map((pokemon) => ({
+    id: pokemon.id,
+  }));
+}
 
 async function getPokemons(id) {
   const res = await fetch("http://localhost:4000/pokemons/" + id, {
@@ -8,6 +20,10 @@ async function getPokemons(id) {
       revalidate: 60,
     },
   });
+
+  if (!res.ok) {
+    notFound();
+  }
 
   return res.json();
 }
