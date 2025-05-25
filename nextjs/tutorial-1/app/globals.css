@@ -122,6 +122,9 @@ form button {
     inline-block 
     text-xs font-semibold;
 }
+.pill.Normal {
+  @apply bg-neutral-300 text-white;
+}
 .pill.Grass {
   @apply bg-green-500 text-white;
 }

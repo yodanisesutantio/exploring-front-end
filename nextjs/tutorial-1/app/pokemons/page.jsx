@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import PokemonLists from "./PokemonLists";
+import Loading from "../loading";
 
 export default function Pokemons() {
   return (
@@ -13,7 +14,9 @@ export default function Pokemons() {
         </div>
       </nav>
 
-      <PokemonLists />
+      <Suspense fallback={<Loading />}>
+        <PokemonLists />
+      </Suspense>
     </main>
   );
 }

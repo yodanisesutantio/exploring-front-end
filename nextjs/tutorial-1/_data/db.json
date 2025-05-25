@@ -119,6 +119,22 @@
       "sType": "Poison",
       "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
       "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/beedrill.avif"
+    },
+    {
+      "id": "016",
+      "name": "Pidgey",
+      "pType": "Normal",
+      "sType": "Flying",
+      "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/pidgey.avif"
+    },
+    {
+      "id": "017",
+      "name": "Pidgeotto",
+      "pType": "Normal",
+      "sType": "Flying",
+      "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/pidgeotto.avif"
     }
   ]
 }
