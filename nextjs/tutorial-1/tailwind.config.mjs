@@ -10,6 +10,9 @@ export default {
       colors: {
         primary: "#202020",
       },
+      fontFamily: {
+        sans: ['"Kumbh Sans", "sans-serif"'],
+      },
     },
   },
   plugins: [],

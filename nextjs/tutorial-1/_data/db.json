@@ -1,0 +1,124 @@
+{
+  "pokemons": [
+    {
+      "id": "001",
+      "name": "Bulbasaur",
+      "pType": "Grass",
+      "sType": "Poison",
+      "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/bulbasaur.avif"
+    },
+    {
+      "id": "002",
+      "name": "Ivysaur",
+      "pType": "Grass",
+      "sType": "Poison",
+      "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/ivysaur.avif"
+    },
+    {
+      "id": "003",
+      "name": "Venusaur",
+      "pType": "Grass",
+      "sType": "Poison",
+      "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/venusaur.avif"
+    },
+    {
+      "id": "004",
+      "name": "Charmander",
+      "pType": "Fire",
+      "sType": null,
+      "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/charmander.avif"
+    },
+    {
+      "id": "005",
+      "name": "Charmeleon",
+      "pType": "Fire",
+      "sType": null,
+      "description": "It lashes about with its tail to knock down its foe. It then tears up the fallen opponent with sharp claws.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/charmeleon.avif"
+    },
+    {
+      "id": "006",
+      "name": "Charizard",
+      "pType": "Fire",
+      "sType": "Flying",
+      "description": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/charizard.avif"
+    },
+    {
+      "id": "007",
+      "name": "Squirtle",
+      "pType": "Water",
+      "sType": null,
+      "description": "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/squirtle.avif"
+    },
+    {
+      "id": "008",
+      "name": "Wartortle",
+      "pType": "Water",
+      "sType": null,
+      "description": "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/wartortle.avif"
+    },
+    {
+      "id": "009",
+      "name": "Blastoise",
+      "pType": "Water",
+      "sType": null,
+      "description": "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/blastoise.avif"
+    },
+    {
+      "id": "010",
+      "name": "Caterpie",
+      "pType": "Bug",
+      "sType": null,
+      "description": "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/caterpie.avif"
+    },
+    {
+      "id": "011",
+      "name": "Metapod",
+      "pType": "Bug",
+      "sType": null,
+      "description": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/metapod.avif"
+    },
+    {
+      "id": "012",
+      "name": "Butterfree",
+      "pType": "Bug",
+      "sType": "Flying",
+      "description": "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/butterfree.avif"
+    },
+    {
+      "id": "013",
+      "name": "Weedle",
+      "pType": "Bug",
+      "sType": "Poison",
+      "description": "Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/weedle.avif"
+    },
+    {
+      "id": "014",
+      "name": "Kakuna",
+      "pType": "Bug",
+      "sType": "Poison",
+      "description": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/kakuna.avif"
+    },
+    {
+      "id": "015",
+      "name": "Beedrill",
+      "pType": "Bug",
+      "sType": "Poison",
+      "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+      "thumb": "https://img.pokemondb.net/sprites/home/normal/2x/avif/beedrill.avif"
+    }
+  ]
+}

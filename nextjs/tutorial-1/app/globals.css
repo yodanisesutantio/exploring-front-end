@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 /* base styles */
+:root {
+  --font-kumbh-sans: "Kumbh Sans", sans-serif;
+}
+
 body {
+  font-family: var(--font-kumbh-sans);
   background: #ebf0fa;
   @apply text-gray-500 m-8;
 }
@@ -104,11 +109,11 @@ form button {
     overflow-hidden;
 }
 .card h3 {
-  @apply font-bold text-gray-700 text-sm 
+  @apply font-bold text-gray-700 text-lg 
     mb-0;
 }
 .card p {
-  @apply my-4 text-sm leading-6;
+  @apply mb-4 text-sm leading-6;
 }
 
 /* pill styles */
@@ -117,16 +122,24 @@ form button {
     inline-block 
     text-xs font-semibold;
 }
-.pill.high {
-  @apply bg-red-300 text-red-600;
+.pill.Grass {
+  @apply bg-green-500 text-white;
 }
-.pill.medium {
-  @apply bg-blue-300 text-blue-600;
+.pill.Poison {
+  @apply bg-purple-500 text-white;
 }
-.pill.low {
-  @apply bg-emerald-300 text-emerald-600;
+.pill.Fire {
+  @apply bg-red-500 text-white;
+}
+.pill.Flying {
+  @apply bg-slate-400 text-white;
+}
+.pill.Water {
+  @apply bg-blue-500 text-white;
+}
+.pill.Bug {
+  @apply bg-lime-500 text-white;
 }
 .card .pill {
-  @apply absolute bottom-0 right-0 
-    rounded-tl-md;
+  @apply relative rounded-md;
 }
